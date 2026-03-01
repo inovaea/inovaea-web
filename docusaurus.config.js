@@ -12,7 +12,7 @@ const config = {
   favicon: 'inovaea_logo/favicon.svg',
 
   organizationName: 'inovaea',
-  projectName: 'ino_docs_V1',
+  projectName: 'inovaea_web_v1',
   deploymentBranch: 'gh-pages',
 
   i18n: {
@@ -74,7 +74,7 @@ const config = {
         docs: {
           routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/inovaea/ino_docs_V1/tree/main/',
+          editUrl: 'https://github.com/inovaea/inovaea-web/tree/main/',
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
         },
@@ -179,7 +179,7 @@ const config = {
       <div class="hw-col-title">🧩 Firmware & Examples</div>
       <a class="hw-col-link" href="/Firmware/overview">Firmware overview</a>
       <a class="hw-col-link" href="/Firmware/firmware-api">Firmware API</a>
-      <a class="hw-col-link" href="/examples/examples-index">Examples & reference designs</a>
+      <a class="hw-col-link" href="/examples/index">Examples & reference designs</a>
       <a class="hw-col-link" href="/faq">FAQ</a>
     </div>
 
@@ -220,7 +220,7 @@ const config = {
         {
           title: 'Resources',
           items: [
-            { label: 'Examples', to: '/examples/examples-index' },
+            { label: 'Examples', to: '/examples/index' },
             { label: 'FAQ', to: '/faq' },
           ],
         },
