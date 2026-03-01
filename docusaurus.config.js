@@ -202,7 +202,6 @@ const config = {
         },
 
         { type: 'localeDropdown', position: 'right' },
-        { href: 'https://inovaea.com', label: 'inovaea.com', position: 'right' },
         { href: 'https://github.com/inovaea', label: 'GitHub', position: 'right' },
       ],
     },
@@ -211,14 +210,27 @@ const config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: " ",
           items: [
-            { label: 'Home', to: '/' },
-            { label: 'Hardware', to: '/Hardware/overview' },
+          {
+            html: `
+            <h4 class="footer-designed">
+             <span class="footer-designed-bold">Designed</span><br/>
+             with&nbsp;Purpose
+            </h4>
+            `,
+          },
           ],
         },
         {
-          title: 'Resources',
+          title: 'Products',
+          items: [
+            { label: 'Examples', to: '/examples/index' },
+            { label: 'FAQ', to: '/faq' },
+          ],
+        },
+                {
+          title: 'Support',
           items: [
             { label: 'Examples', to: '/examples/index' },
             { label: 'FAQ', to: '/faq' },
@@ -227,13 +239,12 @@ const config = {
         {
           title: 'Company',
           items: [
-            { label: 'inovaea.com', href: 'https://inovaea.com' },
             { label: 'GitHub', href: 'https://github.com/inovaea' },
             { label: 'Support', href: 'mailto:support@inovaea.com' },
           ],
         },
       ],
-      copyright: `© ${new Date().getFullYear()} ❤️ inovaea. All rights reserved.`,
+      copyright: `© 2023-${new Date().getFullYear()} ❤️ inovaea. All rights reserved.`,
     },
 
     colorMode: {
