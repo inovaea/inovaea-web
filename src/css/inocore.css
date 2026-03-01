@@ -1,0 +1,304 @@
+/* ==========================================================
+   inoCORE5 – PAGE-SCOPED STYLES (applies only inside .inocore-page)
+   Requirement: wrap inocore5.mdx content with <div className="inocore-page">
+========================================================== */
+
+/* ---- page-local tokens (do NOT touch :root) ---- */
+.inocore-page {
+  --inocore-accent: #e2001a;
+  --inocore-accent-2: #ff6f7f;
+  --inocore-deep: #66000a;
+
+  --inocore-surface: rgba(255, 255, 255, 0.65);
+  --inocore-border: rgba(0, 0, 0, 0.06);
+  --inocore-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+
+  --inocore-radius-lg: 16px;
+  --inocore-radius-md: 12px;
+
+  /* ✅ table (light technical) */
+  --inocore-table-frame: rgba(0, 0, 0, 0.18);   /* outer border */
+  --inocore-table-grid: rgba(0, 0, 0, 0.10);    /* inner separators */
+}
+
+/* Dark mode page-local overrides */
+[data-theme='dark'] .inocore-page {
+  --inocore-surface: rgba(20, 20, 20, 0.45);
+  --inocore-border: rgba(255, 255, 255, 0.10);
+  --inocore-shadow: 0 18px 45px rgba(0, 0, 0, 0.60);
+
+  /* ✅ table (dark technical) */
+  --inocore-table-frame: rgba(255, 255, 255, 0.18);
+  --inocore-table-grid: rgba(255, 255, 255, 0.10);
+}
+
+/* ---- HERO (only inside inocore page) ---- */
+.inocore-page .hero--primary {
+  background: linear-gradient(135deg, var(--inocore-accent) 0%, var(--inocore-deep) 100%);
+  color: #fff;
+  border-radius: var(--inocore-radius-lg);
+  margin: 1.25rem 0 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18);
+}
+
+.inocore-page .hero__title {
+  font-size: 3.0rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.35rem;
+}
+
+.inocore-page .hero__subtitle {
+  opacity: 0.92;
+  font-size: 1.15rem;
+  max-width: 64rem;
+}
+
+/* Mobile hero sizing */
+@media (max-width: 996px) {
+  .inocore-page .hero__title { font-size: 2.2rem; }
+  .inocore-page .hero__subtitle { font-size: 1.02rem; }
+}
+
+/* ---- Anchor buttons row ---- */
+.inocore-page .hero .button {
+  border-radius: 999px;
+  font-weight: 600;
+  border: 1px solid rgba(255,255,255,0.35);
+  background: rgba(255,255,255,0.10);
+  color: #fff;
+  backdrop-filter: blur(6px);
+  transition: transform 0.18s ease-out, filter 0.18s ease-out, background 0.18s ease-out;
+}
+
+.inocore-page .hero .button:hover {
+  transform: translateY(-1px) scale(1.02);
+  filter: brightness(1.03);
+  background: rgba(255,255,255,0.16);
+}
+
+.inocore-page .hero .button:focus-visible {
+  outline: 2px solid rgba(255,255,255,0.65);
+  outline-offset: 2px;
+}
+
+/* ---- “At a glance” cards ---- */
+.inocore-page .card {
+  border-radius: var(--inocore-radius-md);
+  border: 1px solid var(--inocore-border);
+  background: var(--inocore-surface);
+  backdrop-filter: blur(8px);
+  transition: transform 0.18s ease-out, box-shadow 0.18s ease-out, border-color 0.18s ease-out;
+}
+
+.inocore-page .card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(226, 0, 26, 0.45);
+  box-shadow: var(--inocore-shadow);
+}
+
+/* Make headings in cards slightly tighter */
+.inocore-page .card h3 {
+  margin-top: 0;
+  margin-bottom: 0.45rem;
+  font-weight: 700;
+}
+
+/* ---- Section separators / readability ---- */
+/* ✅ zrušené tienovanie/gradient: čistá červená linka */
+.inocore-page hr {
+  border: none;
+  height: 2px;
+  background: var(--inocore-accent);
+  margin: 1.75rem 0;
+}
+
+/* ---- Improve headings spacing on this page only ---- */
+.inocore-page h2 {
+  margin-top: 2.2rem;
+  scroll-margin-top: calc(var(--ifm-navbar-height, 3.75rem) + 1rem);
+}
+
+.inocore-page h3 {
+  margin-top: 1.4rem;
+}
+
+/* ---- Callouts / blockquotes on this page ---- */
+.inocore-page blockquote {
+  border-left: 4px solid rgba(226, 0, 26, 0.55);
+  background: rgba(226, 0, 26, 0.04);
+  border-radius: 10px;
+  padding: 0.85rem 1rem;
+}
+
+[data-theme='dark'] .inocore-page blockquote {
+  background: rgba(226, 0, 26, 0.12);
+}
+
+/* ---- Lists a bit cleaner ---- */
+.inocore-page ul {
+  margin-top: 0.4rem;
+}
+
+/* ---- Optional: “chip” style for inline emphasis (use <span className="inocore-chip">Text</span>) ---- */
+.inocore-page .inocore-chip {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(226,0,26,0.35);
+  background: rgba(226,0,26,0.06);
+  font-size: 0.85em;
+}
+
+/* ==========================================================
+   inoCORE – HERO CTA BUTTONS (SPACED + SQUARER)
+========================================================== */
+
+.inocore-page .inocore-hero-actions {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px !important;                 /* ✅ nikdy nalepené */
+  max-width: 980px;
+  margin: 1.6rem auto 0;
+  padding: 0 6px;
+}
+
+@media (max-width: 996px) {
+  .inocore-page .inocore-hero-actions {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 576px) {
+  .inocore-page .inocore-hero-actions {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* samotné tlačidlá */
+.inocore-page .inocore-hero-actions .inocore-cta {
+  /* ✅ reset možných Docusaurus štýlov, ktoré robia chaos */
+  margin: 0 !important;
+  width: 100%;
+  display: inline-flex !important;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  min-height: 44px;
+  padding: 12px 14px;
+
+  border-radius: 10px;                 /* ✅ hranatejšie */
+  border: 1px solid rgba(255,255,255,0.28);
+  background: rgba(255,255,255,0.10);
+  color: #fff !important;
+
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.1;
+  white-space: nowrap;
+
+  text-decoration: none !important;
+  transition: transform 0.15s ease-out, background 0.15s ease-out, border-color 0.15s ease-out;
+}
+
+.inocore-page .inocore-hero-actions .inocore-cta:hover {
+  transform: translateY(-1px);
+  background: rgba(255,255,255,0.16);
+  border-color: rgba(255,255,255,0.40);
+}
+
+.inocore-page .inocore-hero-actions .inocore-cta:active {
+  transform: translateY(0px);
+}
+
+.inocore-page .inocore-hero-actions .inocore-cta:focus-visible {
+  outline: 2px solid rgba(255,255,255,0.65);
+  outline-offset: 2px;
+}
+
+/* ==========================================================
+   inoCORE – PRODUCT COMPARISON TABLE
+   ✅ bez rohov, bez tieňov, bez blur/backdrop
+   ✅ rám a separátory sivé (jemné), červená len ako akcent textu/odkazov
+========================================================== */
+
+.inocore-page .inocore-compare {
+  margin: 1.6rem 0 2.2rem;
+}
+
+/* tabuľka – čistý technický look */
+.inocore-page .inocore-compare__table {
+  width: 100%;
+  border-collapse: collapse;                     /* ✅ ostré hrany */
+  border: 1px solid var(--inocore-table-frame);  /* ✅ sivý rám */
+  border-radius: 0 !important;                   /* ✅ bez zaoblenia */
+  box-shadow: none !important;                   /* ✅ bez tieňovania */
+  background: transparent;                       /* ✅ bez panelu */
+  overflow: visible;                             /* ✅ nič nerezané */
+}
+
+/* bunky */
+.inocore-page .inocore-compare__table th,
+.inocore-page .inocore-compare__table td {
+  padding: 0.95rem 0.95rem;
+  vertical-align: top;
+  border-bottom: 1px solid var(--inocore-table-grid); /* ✅ sivý separator */
+}
+
+/* vertikálne separátory */
+.inocore-page .inocore-compare__table th:not(:last-child),
+.inocore-page .inocore-compare__table td:not(:last-child) {
+  border-right: 1px solid var(--inocore-table-grid);  /* ✅ sivé stĺpce */
+}
+
+/* hlavička */
+.inocore-page .inocore-compare__table thead th {
+  font-weight: 900;
+  background: transparent;
+}
+
+/* prvý stĺpec zvýraznený */
+.inocore-page .inocore-compare__table td:first-child {
+  font-weight: 700;
+}
+
+/* Parameter cell v hlavičke – červený text */
+.inocore-page .inocore-compare__param {
+  color: var(--inocore-accent);
+}
+
+/* Klikateľné názvy produktov v hlavičke */
+.inocore-page .inocore-compare__productLink {
+  color: var(--inocore-accent) !important;
+  font-weight: 900;
+  text-decoration: none !important;
+}
+
+.inocore-page .inocore-compare__productLink:hover {
+  text-decoration: underline !important;
+}
+
+/* Dark mode – stále technické, bez panelov */
+[data-theme='dark'] .inocore-page .inocore-compare__table {
+  background: transparent;
+}
+
+/* Mobile scroll (tabuľka širšia než displej) */
+@media (max-width: 900px) {
+  .inocore-page .inocore-compare__table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    max-width: 100%;
+  }
+
+  .inocore-page .inocore-compare__table thead,
+  .inocore-page .inocore-compare__table tbody {
+    display: table;
+    width: 100%;
+    min-width: 920px; /* aby sa stĺpce nerozpadli */
+    table-layout: fixed;
+  }
+}

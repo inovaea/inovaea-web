@@ -1,0 +1,301 @@
+---
+title: inoLED micro – ESP32-C6 Addressable RGB LED Driver (5–24V)
+description: inoLED micro is a compact ESP32-C6 LED controller/driver for addressable RGB strips (WS2812B, APA102, SK6812 and more) with SPI support, 5–24V input, 10A fuse, ESD protection, and integrations like WLED, ESPHome, and Home Assistant.
+
+keywords:
+  - inoLED micro
+  - ESP32-C6 LED controller
+  - addressable RGB LED driver
+  - WS2812B controller
+  - APA102 SPI LED driver
+  - SK6812 controller
+  - WLED controller
+  - ESPHome LED controller
+  - Home Assistant LED integration
+  - 5-24V LED controller
+  - MQTT LED controller
+  - pixel LED driver
+slug: /Hardware/inoSWITCH/inoLED-micro
+image: /inovaea_logo/og-inoled-micro.png
+sidebar_position: 2
+---
+
+import Link from '@docusaurus/Link';
+import Head from '@docusaurus/Head';
+
+<Head>
+  <meta property="og:type" content="product" />
+</Head>
+
+<div className="inoled-page">
+
+# inoLED micro
+
+<p>
+  <b>inoLED micro</b> is a compact and powerful <b>ESP32-C3 based controller</b> designed for
+  <b> addressable RGB LED strips and matrices</b>. It supports popular chipsets such as
+  <b>WS2812B, SK6812, WS2815, APA102</b> and many others.
+</p>
+
+<p>
+  Designed for both <b>DIY makers</b> and <b>professional lighting installations</b>,
+  inoLED micro delivers stable power distribution, high current capability (up to 10A),
+  SPI support, and full pixel-level control with integrations like
+  <b>WLED, ESPHome and Home Assistant</b>.
+</p>
+
+<div className="inocore-hero-actions">
+  <a className="button inocore-cta" href="#overview">Overview</a>
+  <a className="button inocore-cta" href="#specs">Specifications</a>
+  <a className="button inocore-cta" href="#leds">Supported LEDs</a>
+  <a className="button inocore-cta" href="#power">Power & Consumption</a>
+  <a className="button inocore-cta" href="#wled">Install WLED</a>
+  <a className="button inocore-cta" href="#use-cases">Use Cases</a>
+</div>
+
+---
+
+## Overview {#overview}
+
+inoLED micro is built around the **ESP32-C3** microcontroller and optimized for:
+
+- Addressable LED strips and matrices
+- Interactive LED installations
+- Home automation lighting
+- Architectural lighting
+- IoT-connected lighting systems
+
+It provides:
+
+- High-current LED output (10A fused)
+- Wide input voltage range (5–24V DC)
+- ESD protection on all I/O
+- Integrated stabilization capacitor (1000µF)
+- USB-C programming interface
+- Dedicated boot and reset buttons
+
+The board supports both:
+
+- Single-wire timing protocols (WS2812 type)
+- SPI-based LEDs (APA102, WS2801, etc.)
+
+---
+
+## Specifications {#specs}
+
+| Parameter | Value |
+|------------|--------|
+| Controller | ESP32-C3 |
+| Input voltage | 5–24V DC |
+| Max current | 10A (fused) |
+| Programming | USB-C |
+| Capacitor | 1000µF built-in |
+| ESD protection | Yes (all I/O) |
+| Protection class | IP20 |
+| Operating temperature | -15°C to +45°C |
+
+### GPIO Mapping
+
+| Function | GPIO |
+|-----------|--------|
+| RESET button | GPIO_EN |
+| FLASH button | GPIO_9 |
+| LED DATA (OUT A) | GPIO_2 |
+| LED CLK (OUT B) | GPIO_5 |
+| Button / Switch input | GPIO_0 |
+
+---
+
+## Supported LED Chipsets {#leds}
+
+inoLED micro supports a wide range of intelligent (addressable) LED types:
+
+- WS2812B
+- WS2811
+- WS2813
+- WS2815
+- SK6812
+- TM1814
+- APA102
+- WS2801
+- LDP8806
+- GS8208
+
+Both **single-wire protocol LEDs** and **clocked SPI LEDs** are supported.
+
+---
+
+## What Are Intelligent (Addressable) LEDs?
+
+Addressable LEDs allow individual control of each LED’s:
+
+- Color
+- Brightness
+- Animation behavior
+
+Each LED contains an integrated microcontroller that receives digital data and forwards the remaining signal to the next LED in the chain.
+
+### Key Advantages
+
+- 24-bit color depth (16+ million colors)
+- Individual pixel control
+- Daisy-chain wiring
+- High brightness and rich color rendering
+- Stable illumination with internal memory
+
+---
+
+## Power & Consumption {#power}
+
+### Power Supply
+
+- LED logic: 5V DC
+- Supported strip voltages: 5V / 12V / 24V
+- Recommended multi-point injection for long strips
+
+### Consumption
+
+- ~60 mA per LED at full white
+- 144 LED/m strip can exceed 8A at 5V
+- Large installations may require dedicated PSU
+
+### Integrated Protection
+
+- 10A fuse
+- 1000µF electrolytic capacitor
+- ESD protection on I/O lines
+
+For high-current installations:
+
+- Use thick power wiring
+- Inject power at multiple points
+- Avoid long thin supply traces
+
+---
+
+## Interfaces & Integrations {#interfaces}
+
+### Network & Protocols
+
+- MQTT
+- HTTP API
+- WebSockets
+- UDP Realtime
+- Serial
+- Philips Hue protocol compatibility
+
+### Platform Integrations
+
+- Home Assistant
+- ESPHome
+- WLED
+- Pipplee
+- ESPixelStick
+
+inoLED micro can operate as:
+
+- Standalone LED controller
+- Smart home lighting node
+- Wi-Fi connected animation engine
+- Real-time effect processor
+
+---
+
+## Install WLED {#wled}
+
+inoLED micro supports direct online flashing of WLED firmware.
+
+### Online Installation
+
+Use:
+https://install.wled.me/
+
+Supported browsers:
+- Microsoft Edge
+- Google Chrome (Chromium-based)
+
+### Installation Procedure
+
+1. Disconnect external power supply.
+2. Connect device via USB-C.
+3. Open https://install.wled.me/.
+4. Select WLED version.
+5. Click **Install**.
+6. Choose COM port labeled:
+   `USB JTAG/serial debug unit (COMxx)`
+7. Click **Connect**.
+8. Click **INSTALL WLED**.
+9. Confirm installation.
+10. Wait until flashing completes.
+11. Disconnect USB.
+12. Connect to external power.
+
+Done.
+
+---
+
+## COM Port Not Found {#bootmode}
+
+If the COM port does not appear:
+
+1. Press **RESET** and **FLASH** simultaneously for 3 seconds.
+2. Release RESET.
+3. After 1 second release FLASH.
+4. Device enters bootloader mode.
+5. COM port will appear.
+
+---
+
+## Available LED Formats
+
+- SMD standalone chips
+- LED strips (30 / 60 / 144 LED per meter)
+- Matrix modules (8×8, 16×16)
+- Circular and square modules
+- Wearable LED modules
+- ESP32-compatible shields
+
+---
+
+## Mechanical & Installation {#mechanical}
+
+- Compact board format
+- Screw terminals for power and LED output
+- USB-C side access
+- Recommended indoor installation (IP20)
+- Suitable for enclosures or LED controller boxes
+
+---
+
+## Use Cases {#use-cases}
+
+- Ambient lighting
+- Architectural lighting
+- Advertising panels
+- Interactive LED displays
+- Music-synced installations
+- IoT lighting projects
+- Wearable electronics
+- DIY LED matrices
+- Smart home effects
+
+---
+
+## Downloads {#downloads}
+
+- Datasheet PDF (coming soon)
+- 3D model (STEP)
+- Pinout diagram
+- Firmware links
+- Wiring examples
+
+---
+
+## Support {#support}
+
+- GitHub Issues
+- Documentation updates
+- Firmware updates via OTA (WLED)
+- Community integrations
+
+</div>

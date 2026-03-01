@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   sodipodi:docname="inovaea_favicon_ink.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="2.9041807"
+     inkscape:cx="267.88967"
+     inkscape:cy="329.00845"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer2"
+     showgrid="false" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="podklad"
+     inkscape:groupmode="layer"
+     id="layer1" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="text_bottom">
+    <path
+       style="font-weight:bold;font-size:22.5778px;font-family:'Berlin Sans FB';-inkscape-font-specification:'Berlin Sans FB Bold';fill:#555555;stroke-width:0.265;paint-order:fill markers stroke;fill-opacity:1"
+       d="m 28.02119,80.885368 q 0,0.07717 -0.02205,0.286632 -0.385851,4.145143 -0.385851,5.23655 0,0.73863 0.03307,2.226912 0.0441,1.477259 0.0441,2.226912 0,0.363803 -0.02205,0.418924 -0.05512,0.187414 -0.341754,0.187414 -0.385851,0 -1.157553,-0.0441 -0.760678,-0.0441 -1.146529,-0.0441 -0.385852,0 -1.157554,0.0441 -0.760678,0.0441 -1.146529,0.0441 -0.286632,0 -0.341753,-0.187414 -0.02205,-0.05512 -0.02205,-0.418924 0,-0.749653 0.03307,-2.226912 0.03307,-1.488282 0.03307,-2.226912 0,-1.675696 -0.374827,-5.23655 -0.03307,-0.209462 -0.03307,-0.297657 0,-0.286632 0.341754,-0.286632 0.440973,0 1.322918,0.143316 0.89297,0.143316 1.344967,0.143316 0.451997,0 1.333942,-0.143316 0.89297,-0.143316 1.333942,-0.143316 0.33073,0 0.33073,0.297657 z"
+       id="path33"
+       inkscape:label="i"
+       inkscape:export-filename="favicon.svg"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       class="cls-1"
+       d="m 25.060357,76.493942 c 0.367377,-0.383449 0.625459,-0.715007 1.193974,-0.780675 1.064015,-0.121234 2.040779,0.968038 1.50349,2.040318 -0.152921,0.305382 -0.464274,0.668626 -0.808688,1.024982 -0.377939,0.391255 -0.79629,0.774705 -1.089272,1.065392 l -0.799045,0.792616 -0.660359,-0.635563 c -0.794453,-0.765063 -2.087617,-1.728049 -2.13354,-2.921104 -0.02893,-0.835782 0.63051,-1.371234 1.389143,-1.361589 0.67781,0.0091 0.964364,0.346252 1.404297,0.775623 z"
+       id="path1"
+       style="fill:#e2001a;fill-rule:evenodd;stroke-width:0.0459221;fill-opacity:1" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="text_top" />
+</svg>

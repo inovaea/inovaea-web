@@ -1,0 +1,94 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Hardware": {
+    "message": "Hardware",
+    "description": "The label for category 'Hardware' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.inoCORE": {
+    "message": "inoCORE",
+    "description": "The label for category 'inoCORE' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.inoNET": {
+    "message": "inoNET",
+    "description": "The label for category 'inoNET' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.inoBOARD": {
+    "message": "inoBOARD",
+    "description": "The label for category 'inoBOARD' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.inoSWITCH": {
+    "message": "inoSWITCH",
+    "description": "The label for category 'inoSWITCH' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Firmware": {
+    "message": "Firmware",
+    "description": "The label for category 'Firmware' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.doc.Home": {
+    "message": "Home",
+    "description": "The label for the doc item 'Home' in sidebar 'tutorialSidebar', linking to the doc intro"
+  },
+  "sidebar.tutorialSidebar.doc.Overview": {
+    "message": "Overview",
+    "description": "The label for the doc item 'Overview' in sidebar 'tutorialSidebar', linking to the doc Hardware/overview"
+  },
+  "sidebar.tutorialSidebar.doc.inoCORE5.1": {
+    "message": "inoCORE5.1",
+    "description": "The label for the doc item 'inoCORE5.1' in sidebar 'tutorialSidebar', linking to the doc Hardware/inoCORE/inoCORE5.1"
+  },
+  "sidebar.tutorialSidebar.doc.inoCORE5.2": {
+    "message": "inoCORE5.2",
+    "description": "The label for the doc item 'inoCORE5.2' in sidebar 'tutorialSidebar', linking to the doc Hardware/inoCORE/inoCORE5.2"
+  },
+  "sidebar.tutorialSidebar.doc.inoCORE5.3": {
+    "message": "inoCORE5.3",
+    "description": "The label for the doc item 'inoCORE5.3' in sidebar 'tutorialSidebar', linking to the doc Hardware/inoCORE/inoCORE5.3"
+  },
+  "sidebar.tutorialSidebar.doc.inoNET8.0": {
+    "message": "inoNET8.0",
+    "description": "The label for the doc item 'inoNET8.0' in sidebar 'tutorialSidebar', linking to the doc Hardware/inoNET/inoNET8.0"
+  },
+  "sidebar.tutorialSidebar.doc.inoNET8.4": {
+    "message": "inoNET8.4",
+    "description": "The label for the doc item 'inoNET8.4' in sidebar 'tutorialSidebar', linking to the doc Hardware/inoNET/inoNET8.4"
+  },
+  "sidebar.tutorialSidebar.doc.inoNET8.8": {
+    "message": "inoNET8.8",
+    "description": "The label for the doc item 'inoNET8.8' in sidebar 'tutorialSidebar', linking to the doc Hardware/inoNET/inoNET8.8"
+  },
+  "sidebar.tutorialSidebar.doc.inoBOARD8.8": {
+    "message": "inoBOARD8.8",
+    "description": "The label for the doc item 'inoBOARD8.8' in sidebar 'tutorialSidebar', linking to the doc Hardware/inoBOARD/inoBOARD8.8"
+  },
+  "sidebar.tutorialSidebar.doc.inoBOARD16.0": {
+    "message": "inoBOARD16.0",
+    "description": "The label for the doc item 'inoBOARD16.0' in sidebar 'tutorialSidebar', linking to the doc Hardware/inoBOARD/inoBOARD16.0"
+  },
+  "sidebar.tutorialSidebar.doc.inoBOARD0.16": {
+    "message": "inoBOARD0.16",
+    "description": "The label for the doc item 'inoBOARD0.16' in sidebar 'tutorialSidebar', linking to the doc Hardware/inoBOARD/inoBOARD0.16"
+  },
+  "sidebar.tutorialSidebar.doc.PoE switches": {
+    "message": "PoE switches",
+    "description": "The label for the doc item 'PoE switches' in sidebar 'tutorialSidebar', linking to the doc Hardware/inoSWITCH/inoSWITCH-poe"
+  },
+  "sidebar.tutorialSidebar.doc.Industrial switches": {
+    "message": "Industrial switches",
+    "description": "The label for the doc item 'Industrial switches' in sidebar 'tutorialSidebar', linking to the doc Hardware/inoSWITCH/inoSWITCH-industrial"
+  },
+  "sidebar.tutorialSidebar.doc.Switching modules": {
+    "message": "Switching modules",
+    "description": "The label for the doc item 'Switching modules' in sidebar 'tutorialSidebar', linking to the doc Hardware/inoSWITCH/inoSWITCH-modules"
+  },
+  "sidebar.tutorialSidebar.doc.Firmware API": {
+    "message": "Firmware API",
+    "description": "The label for the doc item 'Firmware API' in sidebar 'tutorialSidebar', linking to the doc Firmware/firmware-api"
+  },
+  "sidebar.tutorialSidebar.doc.FAQ": {
+    "message": "FAQ",
+    "description": "The label for the doc item 'FAQ' in sidebar 'tutorialSidebar', linking to the doc faq"
+  }
+}

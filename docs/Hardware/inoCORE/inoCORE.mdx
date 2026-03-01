@@ -1,0 +1,361 @@
+---
+title: inoCORE5 – Modular Industrial Edge AI & IoT Controller
+description: Modular industrial Edge AI and IoT controller platform based on Raspberry Pi Compute Module 5, designed for industrial automation, AI inference, camera systems, and smart building integration.
+keywords:
+  - inoCORE
+  - inoCORE5
+  - Edge AI controller
+  - Industrial IoT controller
+  - Raspberry Pi CM5
+  - Industrial edge computing
+  - AI gateway
+  - CAN FD controller
+  - Industrial automation hardware
+slug: /Hardware/inoCORE
+image: /inovaea_logo/og-inocore.png
+---
+
+
+import Link from '@docusaurus/Link';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<div className="inocore-page">
+
+# inoCORE5
+
+<div className="hero hero--primary" style={{padding: "2.5rem 0"}}>
+  <div className="container">
+   {/* <h1 className="hero__title">inoCORE5</h1> */}
+    <p className="hero__subtitle">
+      Modular industrial <b>Edge AI</b> & <b>IoT</b> controller platform powered by <b>Raspberry Pi Compute Module 5 (CM5)</b>.
+      Built for scalable industrial connectivity, flexible I/O configurations, and modern wired / wireless networking.
+    </p>
+
+    <div className="inocore-hero-actions">
+      <a className="button inocore-cta" href="#overview">Platform Overview</a>
+      <a className="button inocore-cta" href="#key-features">Key Features</a>
+      <a className="button inocore-cta" href="#interfaces">Interfaces</a>
+      <a className="button inocore-cta" href="#applications">Applications</a>
+      <a className="button inocore-cta" href="#system-architecture">System Architecture</a>
+    </div>
+  </div>
+</div>
+
+---
+
+## Overview {#overview}
+
+**inoCORE5** is a highly adaptable industrial controller platform that combines **edge computing**, **artificial intelligence capabilities**, and **IoT connectivity**.  
+Built around the **Raspberry Pi Compute Module 5 (CM5)**, it offers a strong ecosystem foundation while targeting industrial deployments where **connectivity, scalability, and long-term maintainability** matter.
+
+The **inoCORE5 product family** is designed as a **modular platform**. Individual variants may differ in:
+- the number and type of I/O channels,
+- available industrial interfaces,
+- wireless communication options,
+- mechanical form factor and mounting (e.g., DIN-rail, panel, embedded).
+
+Despite differences in hardware configuration, inoCORE5 variants share a **unified platform concept** to keep software and integration consistent.
+
+---
+
+## Product lineup
+
+<div className="inocore-compare">
+  <table className="inocore-compare__table">
+    <thead>
+      <tr>
+        <th className="inocore-compare__param">Parameter</th>
+
+        <th className="inocore-compare__product">
+          <Link className="inocore-compare__productLink" to="/Hardware/inoCORE/inoCORE5.1">
+            inoCORE5.1
+          </Link>
+        </th>
+
+        <th className="inocore-compare__product">
+          <Link className="inocore-compare__productLink" to="/Hardware/inoCORE/inoCORE5.2">
+            inoCORE5.2
+          </Link>
+        </th>
+
+        <th className="inocore-compare__product">
+          <Link className="inocore-compare__productLink" to="/Hardware/inoCORE/inoCORE5.3">
+            inoCORE5.3
+          </Link>
+        </th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>Target use</td>
+        <td>Home automation</td>
+        <td>Industrial automation</td>
+        <td>Edge AI, cameras & gateways</td>
+      </tr>
+
+      <tr>
+        <td>Compute module</td>
+        <td>Raspberry Pi CM5</td>
+        <td>Raspberry Pi CM5</td>
+        <td>Raspberry Pi CM5</td>
+      </tr>
+
+      <tr>
+        <td>Ethernet</td>
+        <td>1× Ethernet</td>
+        <td>2× Ethernet</td>
+        <td>2× Ethernet</td>
+      </tr>
+
+      <tr>
+        <td>USB</td>
+        <td>2× USB</td>
+        <td>2× USB</td>
+        <td>4× USB</td>
+      </tr>
+
+      <tr>
+        <td>CAN</td>
+        <td>1× CAN</td>
+        <td>2× CAN FD</td>
+        <td>2× CAN FD</td>
+      </tr>
+
+      <tr>
+        <td>Serial interfaces</td>
+        <td>2× RS-485,</td>
+        <td>2× RS-485, 2× RS-232</td>
+        <td>2× RS-485, 2× RS-232</td>
+      </tr>
+
+      <tr>
+        <td>Digital I/O</td>
+        <td>N/A</td>
+        <td>8× DI, 8× DO, 4x AI, 2x AO</td>
+        <td>8× DI, 8× DO</td>
+      </tr>
+
+      <tr>
+        <td>Wireless options</td>
+        <td>Wi-Fi / BLE, optional 4G/5G</td>
+        <td>Wi-Fi / BLE, optional LoRa®, 4G/5G</td>
+        <td>Wi-Fi / BLE, optional LoRa®, 4G/5G</td>
+      </tr>
+
+      <tr>
+        <td>Mounting</td>
+        <td>DIN-rail</td>
+        <td>DIN-rail</td>
+        <td>DIN-rail / panel (variant-dependent)</td>
+      </tr>
+
+      <tr>
+        <td>Notes</td>
+        <td>Balanced baseline configuration</td>
+        <td>Optimized for automation cabinets</td>
+        <td>Optimized for AI & camera systems</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+---
+
+## At a glance
+
+<div className="row">
+  <div className="col col--4">
+    <div className="card">
+      <div className="card__body">
+        <h3>Industrial Connectivity</h3>
+        <p>Rich wired interfaces (Ethernet, USB, CAN FD, RS-485/RS-232, DI/DO) depending on the selected variant.</p>
+      </div>
+    </div>
+  </div>
+
+  <div className="col col--4">
+    <div className="card">
+      <div className="card__body">
+        <h3>Wireless Options</h3>
+        <p>Optional 4G/5G, LoRa®, Wi-Fi / BLE for distributed systems, remote access, and edge-to-cloud use cases.</p>
+      </div>
+    </div>
+  </div>
+
+  <div className="col col--4">
+    <div className="card">
+      <div className="card__body">
+        <h3>Modular Platform</h3>
+        <p>Multiple variants with a shared architecture — designed to scale across projects without redesigning the whole system.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+---
+
+## Platform concept {#platform-concept}
+
+inoCORE5 follows a **platform-based design philosophy**:
+
+- **Common compute core** based on Raspberry Pi CM5
+- **Consistent system architecture** across variants
+- **Scalable hardware configurations** (I/O, interfaces, wireless)
+- **Simplified maintenance** through portability and reuse
+- **Industrial-ready integration** into control cabinets and distributed systems
+
+This approach helps you build solutions faster, reduce integration risk, and reuse the same software stack across multiple deployments.
+
+---
+
+## Key features {#key-features}
+
+Typical capabilities across inoCORE5 variants include:
+
+- **Edge computing & AI readiness**  
+  Suitable for running data processing pipelines and AI inference close to the machine.
+
+- **Industrial communication readiness**  
+  Designed to integrate with sensors, actuators, drives, PLCs, and industrial networks.
+
+- **I/O flexibility**  
+  Variants may offer configurable **digital inputs/outputs** and additional expansion options.
+
+- **Wired + wireless networking**  
+  Enables both robust on-prem networking and remote connectivity when needed.
+
+- **Compact and installation-friendly**  
+  Mechanical options tailored for industrial cabinets and embedded installations.
+
+---
+
+## Interfaces {#interfaces}
+
+The exact set of interfaces depends on the inoCORE5 variant. Common industrial interfaces include:
+
+### Wired interfaces
+- **Ethernet** (often dual Ethernet for segmentation or redundancy)
+- **USB** for peripherals and service access
+- **CAN FD** for real-time industrial communication
+- **RS-485 / RS-232** for industrial and legacy devices
+- **Digital inputs / outputs** (variant-dependent counts)
+
+### Wireless interfaces
+- **4G / 5G** cellular connectivity (optional)
+- **LoRa®** (optional, low-power long-range)
+- **Wi-Fi / Bluetooth Low Energy (BLE)** (optional)
+
+---
+
+## Variants {#variants}
+
+inoCORE5 is offered as a **family of models** to match different industrial requirements.
+
+Common differences between variants include:
+- I/O count (DI/DO and possible expansions)
+- Communication interface selection (CAN FD / RS-485 / RS-232)
+- Wireless module availability (4G/5G, LoRa®, Wi-Fi/BLE)
+- Mechanical design & mounting (DIN-rail, panel, embedded)
+
+> The goal is to keep a consistent platform experience while enabling the right hardware configuration for each project.
+
+---
+
+## Mechanical design & installation {#mechanical}
+
+inoCORE5 variants are designed for industrial installation and long-term operation.
+
+Depending on the model, mechanical options may include:
+- **DIN-rail mounting**
+- **Panel mounting**
+- **Compact embedded enclosures**
+
+The mechanical approach emphasizes:
+- compact footprint,
+- straightforward installation,
+- industrial cabinet compatibility.
+
+---
+
+## Applications {#applications}
+
+inoCORE5 is designed as a versatile platform suitable for a wide range of industrial, infrastructure, and smart system applications.
+
+### Industrial AI / Edge Intelligence
+- Edge AI inference and local decision-making
+- Anomaly detection and predictive maintenance
+- AI-assisted process optimization
+- Privacy-focused analytics with reduced cloud dependency
+
+### Automation and control
+- Machine automation coordination
+- Robot and motion system supervision
+- Smart production cells and distributed automation
+- High-level control layer alongside traditional PLC systems
+
+### Industrial IoT gateways
+- Protocol bridging between fieldbuses and IP-based systems
+- Secure data transfer to SCADA, MES, or cloud platforms
+- Aggregation, filtering, and preprocessing of machine and sensor data
+- Edge-based logic and event handling
+
+### Data acquisition & monitoring
+- Industrial process data acquisition
+- Energy and environmental monitoring
+- Condition monitoring of machines and infrastructure
+- Long-term data logging and analytics
+
+### Camera systems and video processing
+inoCORE5 can also be used as an edge platform for **camera-based systems**:
+
+- Industrial camera gateways
+- Edge video processing and AI-assisted video analytics
+- Lightweight NVR / VMS nodes
+- Event-driven video capture and processing
+- Integration of camera systems with automation, alarms, or monitoring systems
+
+Typical use cases include machine monitoring, perimeter surveillance, quality inspection, and infrastructure supervision.
+
+### Home and building automation
+Thanks to its flexible I/O options and rich connectivity, inoCORE5 can be deployed in **smart home and smart building automation** scenarios:
+
+- Building automation controllers
+- Integration of lighting, HVAC, shading, and energy systems
+- Smart home gateways and local automation hubs
+- Sensor and actuator integration (wired and wireless)
+- Edge logic for automation without cloud dependency
+
+This makes inoCORE5 suitable not only for industrial environments, but also for **residential, commercial, and mixed-use buildings** where reliability, flexibility, and local control are required.
+
+---
+
+## System architecture {#system-architecture}
+
+inoCORE5 typically operates as the **edge layer** between shop-floor devices and higher-level systems.
+
+**Typical deployment flow:**
+- Field devices connect via industrial interfaces (DI/DO, RS-485/RS-232, CAN FD, Ethernet)
+- inoCORE5 performs local processing, control logic, and/or AI inference
+- Data and results are optionally forwarded to SCADA, MES, or cloud services
+
+This architecture supports:
+- **low latency** (local processing),
+- **scalability** (distributed nodes),
+- **resilience** (edge autonomy),
+- **flexible networking** (wired + wireless).
+
+---
+
+## What’s next
+
+Use the following sections as your documentation entry points (you can expand them later into dedicated pages if needed):
+
+- Hardware I/O and wiring guidelines
+- Software stack and provisioning
+- Remote management and update strategy
+- Example configurations (CAN FD, RS-485 devices, gateways)
+- Real deployments and reference projects
+
+</div>
