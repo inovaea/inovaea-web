@@ -2,7 +2,7 @@
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'inovaea docs',
+  title: 'inovaea web',
   tagline: 'Documentation for inovaea projects',
   url: 'https://inovaea.com',
   baseUrl: '/',
