@@ -15,14 +15,7 @@ const config = {
   projectName: 'inovaea_web_v1',
   deploymentBranch: 'gh-pages',
 
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en', 'sk'],
-    localeConfigs: {
-      en: { label: 'English' },
-      sk: { label: 'Slovenčina' },
-    },
-  },
+
 
   onBrokenLinks: 'warn',
   markdown: {
@@ -201,7 +194,6 @@ const config = {
           ],
         },
 
-        { type: 'localeDropdown', position: 'right' },
         { href: 'https://github.com/inovaea', label: 'GitHub', position: 'right' },
       ],
     },
